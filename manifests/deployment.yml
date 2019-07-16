@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: martinwiesepipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: martinwiesepipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: martinwiesepipelinesjavascriptdocker 
+          image: azcr0987.azurecr.io/martinwiesepipelinesjavascriptdocker 
+          ports:
+          - containerPort: 8080
